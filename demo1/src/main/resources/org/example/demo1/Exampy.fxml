@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="518.0" prefWidth="926.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo1.Exampycontroller">
+   <children>
+      <Label contentDisplay="CENTER" prefHeight="60.0" prefWidth="928.0" style="-fx-alignment: center; -fx-background-color: lightgreen;" text="Online Exam" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="60.0" text="Python">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="Question" layoutX="127.0" layoutY="134.0" text="1.Question">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="option1" layoutX="196.0" layoutY="203.0" mnemonicParsing="false" text="RadioButton1">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="option" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="option2" layoutX="432.0" layoutY="204.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$option">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="option3" layoutX="196.0" layoutY="310.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$option">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="option4" layoutX="445.0" layoutY="310.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$option">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="next" layoutX="323.0" layoutY="413.0" mnemonicParsing="false" onAction="#setnext" prefHeight="23.0" prefWidth="198.0" style="-fx-background-color: palegreen; -fx-border-color: green;" text="Next">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Button>
+      <ProgressBar fx:id="pg" layoutX="736.0" layoutY="413.0" prefHeight="18.0" prefWidth="138.0" progress="0.0" />
+      <Label fx:id="timer" layoutX="761.0" layoutY="448.0" text="30s" textFill="#d70e0e">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="qno" layoutX="55.0" layoutY="91.0" text="1/10">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

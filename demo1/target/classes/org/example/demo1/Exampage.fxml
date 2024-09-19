@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="518.0" prefWidth="926.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo1.Exampagecontroller">
+   <children>
+      <Label contentDisplay="CENTER" prefHeight="55.0" prefWidth="926.0" style="-fx-background-color: lightgreen; -fx-alignment: center;" text="Online Exam" underline="true">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="64.0" text="Chose your subject">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="py" layoutX="181.0" layoutY="160.0" mnemonicParsing="false" onAction="#pyquestion" prefHeight="230.0" prefWidth="223.0" style="-fx-background-color: none; -fx-border-color: blue; -fx-border-radius: 25px;" styleClass="subbtn1" stylesheets="@style.css">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Button>
+      <Button fx:id="java" layoutX="543.0" layoutY="160.0" mnemonicParsing="false" onAction="#javaq" prefHeight="230.0" prefWidth="223.0" style="-fx-background-color: none; -fx-border-color: red; -fx-border-radius: 25px;" styleClass="subbtn" stylesheets="@style1.css">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
